@@ -1,0 +1,31 @@
+:root {
+  --color-gold: #D4AF37;
+  --color-green: #2E7D32;
+  --color-orange: #E67E22;
+  --color-text: #111111;
+  --color-background: #F1F4E8;
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: var(--color-background);
+  font-family: var(--font-body);
+}
+
+h1, h2 {
+  font-family: var(--font-heading);
+  color: var(--color-green);
+}
+
+header {
+  background-color: var(--color-gold);
+  padding: 20px;
+  text-align: center;
+}
+
+section {
+  padding: 20px;
+  margin: 10px 0;
+  background: white;
+}
