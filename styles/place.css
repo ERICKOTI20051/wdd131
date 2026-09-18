@@ -10,10 +10,13 @@
 
 body {
   background-color: var(--color-background);
+  color: var(--color-text);
   font-family: var(--font-body);
+  margin: 0;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: var(--font-heading);
   color: var(--color-green);
 }
@@ -27,5 +30,35 @@ header {
 section {
   padding: 20px;
   margin: 10px 0;
-  background: white;
+  background-color: white;
+}
+
+/* Required pseudo-element */
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin-top: 8px;
+  background-color: var(--color-orange);
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+  header {
+    padding: 15px;
+  }
+
+  section {
+    padding: 15px;
+    margin: 8px 0;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
 }
