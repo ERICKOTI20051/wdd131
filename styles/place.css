@@ -62,3 +62,9 @@ h2::after {
     font-size: 1.4rem;
   }
 }
+.weather-icon {
+  width: 45px;
+  height: 45px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
