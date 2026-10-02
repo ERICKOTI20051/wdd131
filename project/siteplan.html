@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Site plan for Savanna Trails Kenya, a safari planning website.">
+  <title>Savanna Trails Kenya | Site Plan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+  <header>
+    <svg class="logo" role="img" aria-label="Savanna Trails Kenya logo" viewBox="0 0 64 64" width="64" height="64">
+      <circle cx="32" cy="32" r="30" fill="#E0B04A"/>
+      <path d="M4 46h56v14H4z" fill="#1F3D2B"/>
+      <path d="M32 18v28M16 24c6-6 26-6 32 0M20 30c5-4 19-4 24 0" stroke="#1F3D2B" stroke-width="3" fill="none" stroke-linecap="round"/>
+    </svg>
+    <div>
+      <h1>Savanna Trails Kenya</h1>
+      <p>WDD 131 Site Plan</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="name">
+      <h2>Site Name</h2>
+      <p>Savanna Trails Kenya</p>
+      <p>This name tells visitors the site is about safari travel in Kenya. "Trails" suggests guided routes and adventure, and "Savanna" names the landscape people come to see.</p>
+      <p>Optional domain availability: savannatrails.ke</p>
+    </section>
+
+    <section id="purpose">
+      <h2>Site Purpose</h2>
+      <p>The site helps first-time travelers plan a safari. It provides destination guides, wildlife and best-season information, packing tips, and a trip inquiry form.</p>
+    </section>
+
+    <section id="scenarios">
+      <h2>Scenarios</h2>
+      <ul>
+        <li>When is the best time to see the Great Migration in the Maasai Mara?</li>
+        <li>What should I pack for a three-day safari?</li>
+        <li>Which national park is best for seeing elephants?</li>
+        <li>How can I ask about a trip for my family?</li>
+      </ul>
+    </section>
+
+    <section id="colors">
+      <h2>Color Schema</h2>
+      <ul class="swatches">
+        <li><span class="chip" style="background:#1F3D2B"></span>Acacia Green #1F3D2B: header, footer, headings</li>
+        <li><span class="chip" style="background:#E0B04A"></span>Savanna Gold #E0B04A: accents, borders, buttons</li>
+        <li><span class="chip" style="background:#B5521B"></span>Sunset Orange #B5521B: links and calls to action</li>
+        <li><span class="chip" style="background:#EEF1E6"></span>Sage Mist #EEF1E6: page background</li>
+        <li><span class="chip" style="background:#262620"></span>Earth Charcoal #262620: paragraph text</li>
+      </ul>
+    </section>
+
+    <section id="typography">
+      <h2>Typography</h2>
+      <ul>
+        <li><strong class="display">Playfair Display</strong>: headings and the site name, giving an expedition-journal feel.</li>
+        <li><strong>Open Sans</strong>: paragraphs, navigation, and forms, chosen for readability on small screens.</li>
+      </ul>
+    </section>
+
+    <section id="wireframes">
+      <h2>Wireframes</h2>
+      <p>Home page layout in mobile and desktop views.</p>
+      <div class="frames">
+        <figure>
+          <div class="wire mobile" role="img" aria-label="Mobile wireframe: header, menu button, hero image, intro, three stacked destination cards, footer">
+            <div class="box">Header + menu button</div>
+            <div class="box tall">Hero image</div>
+            <div class="box">Intro text</div>
+            <div class="box">Destination card</div>
+            <div class="box">Destination card</div>
+            <div class="box">Destination card</div>
+            <div class="box">Footer</div>
+          </div>
+          <figcaption>Mobile</figcaption>
+        </figure>
+        <figure>
+          <div class="wire desktop" role="img" aria-label="Desktop wireframe: header with navigation, wide hero image, intro beside tips, three destination cards in a row, footer">
+            <div class="box">Header + navigation links</div>
+            <div class="box tall">Hero image</div>
+            <div class="row"><div class="box">Intro text</div><div class="box">Safari tips</div></div>
+            <div class="row"><div class="box">Card</div><div class="box">Card</div><div class="box">Card</div></div>
+            <div class="box">Footer</div>
+          </div>
+          <figcaption>Desktop</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="pages">
+      <h2>Planned Pages</h2>
+      <ul>
+        <li>Home: hero, featured parks, and tips</li>
+        <li>Destinations: park cards with filters, built with JavaScript</li>
+        <li>Plan Your Safari: inquiry form that saves details with localStorage</li>
+        <li>References: image and text sources</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Erick | Kenya</p>
+  </footer>
+  <script>document.getElementById("year").textContent = ${new Date().getFullYear()};</script>
+</body>
+</html
