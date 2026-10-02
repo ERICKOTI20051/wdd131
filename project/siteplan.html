@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Erick Ouma Otieno">
   <meta name="description" content="Site plan for Savanna Trails Kenya, a safari planning website.">
   <title>Savanna Trails Kenya | Site Plan</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,11 +50,11 @@
     <section id="colors">
       <h2>Color Schema</h2>
       <ul class="swatches">
-        <li><span class="chip" style="background:#1F3D2B"></span>Acacia Green #1F3D2B: header, footer, headings</li>
-        <li><span class="chip" style="background:#E0B04A"></span>Savanna Gold #E0B04A: accents, borders, buttons</li>
-        <li><span class="chip" style="background:#B5521B"></span>Sunset Orange #B5521B: links and calls to action</li>
-        <li><span class="chip" style="background:#EEF1E6"></span>Sage Mist #EEF1E6: page background</li>
-        <li><span class="chip" style="background:#262620"></span>Earth Charcoal #262620: paragraph text</li>
+        <li><span class="chip chip-green"></span>Acacia Green #1F3D2B: header, footer, headings</li>
+        <li><span class="chip chip-gold"></span>Savanna Gold #E0B04A: accents, borders, buttons</li>
+        <li><span class="chip chip-orange"></span>Sunset Orange #B5521B: links and calls to action</li>
+        <li><span class="chip chip-sage"></span>Sage Mist #EEF1E6: page background</li>
+        <li><span class="chip chip-charcoal"></span>Earth Charcoal #262620: paragraph text</li>
       </ul>
     </section>
 
@@ -108,6 +109,6 @@
   <footer>
     <p>&copy; <span id="year"></span> Erick | Kenya</p>
   </footer>
-  <script>document.getElementById("year").textContent = ${new Date().getFullYear()};</script>
+  <script src="scripts/siteplan.js"></script>
 </body>
-</html
+</html>

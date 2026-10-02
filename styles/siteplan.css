@@ -17,9 +17,14 @@ figure{margin:0}
 figcaption{text-align:center;font-weight:600}
 .wire{display:flex;flex-direction:column;gap:.4rem;padding:.5rem;border:2px dashed var(--green);background:#fff}
 .mobile{width:14rem}
-.desktop{width:min(100%,32rem)}
+.desktop{width:100%;max-width:32rem}
 .box{border:1px solid var(--green);padding:.5rem;text-align:center;font-size:.85rem;background:var(--sage)}
 .tall{padding:1.5rem .5rem}
 .row{display:flex;gap:.4rem}
 .row .box{flex:1}
 footer{background:var(--green);color:#fff;text-align:center;padding:1rem}
+.chip-green{background:#1F3D2B}
+.chip-gold{background:#E0B04A}
+.chip-orange{background:#B5521B}
+.chip-sage{background:#EEF1E6}
+.chip-charcoal{background:#262620}
