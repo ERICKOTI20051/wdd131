@@ -1,0 +1,69 @@
+:root {
+  --bg: #f4f7fb;
+  --card: #ffffff;
+  --primary: #1d4e89;
+  --text: #1a1a1a;
+  --border: #8a96a3;
+  --star: #e6a100;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+header, footer { background: var(--primary); color: #fff; text-align: center; padding: 1rem; }
+footer p { margin: 0.25rem 0; font-size: 0.9rem; }
+main { max-width: 600px; margin: 1.5rem auto; padding: 0 1rem; }
+form, .confirm {
+  background: var(--card);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.15);
+}
+.field { margin-bottom: 1.25rem; border: 0; padding: 0; }
+label, legend { display: block; font-weight: 600; margin-bottom: 0.4rem; padding: 0; }
+select, input[type="date"], input[type="text"], textarea {
+  width: 100%;
+  padding: 0.6rem;
+  font: inherit;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+select:focus, input:focus, textarea:focus { outline: 3px solid #7fb0ea; }
+.check { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.3rem; }
+.check label { font-weight: 400; margin: 0; }
+.check input { width: 1.1rem; height: 1.1rem; }
+
+/* Star rating */
+.stars { display: inline-flex; flex-direction: row-reverse; justify-content: flex-end; }
+.stars input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.stars label { font-size: 2.2rem; color: #5b6570; cursor: pointer; margin: 0; padding: 0 0.1rem; }
+.stars label::before { content: "\2606"; }
+.stars input:checked ~ label::before,
+.stars label:hover::before,
+.stars label:hover ~ label::before { content: "\2605"; color: var(--star); }
+.stars input:focus-visible + label { outline: 3px solid #7fb0ea; }
+.sr { position: absolute; left: -9999px; }
+
+input[type="submit"] {
+  width: 100%;
+  padding: 0.8rem;
+  font: inherit;
+  font-weight: 600;
+  color: #fff;
+  background: var(--primary);
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover { background: #143a68; }
+.confirm { text-align: center; }
+.confirm a { color: var(--primary); font-weight: 600; }
+
+@media (min-width: 700px) {
+  main { margin-top: 2.5rem; }
+  form { padding: 2rem; }
+}
